@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>iChat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Material Design fonts -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
@@ -14,15 +15,34 @@
   <!-- Bootstrap Material Design -->
   <link rel="stylesheet" type="text/css" href="bower/bootstrap-material-design/dist/bootstrap-material-design.min.css">
 
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+
 </head>
 <body>
+  <!-- NOTA: Cuando se vaya a trabajar con Angular2 se debe quitar boostrap y bootstrap-material-design -->
 
-  <button type="button" class="btn btn-raised btn-primary">Primary</button>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+      <div class="panel panel-default" id="login-panel">
+        <div class="panel-body">
+          <div class="text-center">
+            <h3>Login</h3><br/>
+          </div>
+          <button type="button" class="btn btn-raised btn-primary">Primary</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="bower/jquery/dist/jquery.min.js"></script>
   <script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
-
-  //falta agregar js de bootstrapmaterialdesing life, umd
+  <script src="bower/bootstrap-material-design/dist/bootstrap-material-design.iife.min.js"></script>
+  <script src="bower/bootstrap-material-design/dist/bootstrap-material-design.umd.js"></script>
 
 </body>
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">Place sticky footer content here.</p>
+  </div>
+</footer>
 </html>

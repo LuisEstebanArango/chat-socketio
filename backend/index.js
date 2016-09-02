@@ -8,6 +8,7 @@ var path = require('path');
 
 // para servir los archivos estaticos
 app.use('/bower', express.static(path.resolve(__dirname + '/../frontend/bower_components')));
+app.use('/css', express.static(path.resolve(__dirname + '/../frontend/app/styles')));
 
 app.get('/', function(req, res){
   res.sendFile(path.resolve(__dirname + '/../frontend/app/index.html'));
