@@ -3,9 +3,10 @@ html {
   min-height: 100%;
 }
 body {
+  font-family: 'Raleway', sans-serif !important;
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  background-color: #DCEDC8;
+  background-color: #FFF9C4;
 }
 .footer {
   position: absolute;
@@ -13,12 +14,13 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #689F38;
+  background-color: #009688;
   color: #fff;
 }
 
 #login-panel{
   margin-top:  5em;
+  border-left: 3px solid #009688;
 }
 .box-center{
   margin-right: 4em;
